@@ -9,7 +9,6 @@ usr_1_scor = 0
 usr_2_scor = 0
 pause = False
 mixer.init()
-mixer.music.load('hit.wav')
 def moveBall():
     global dx,dy,usr_1_scor,usr_2_scor,pause,chng_pan
     lim_x,lim_y = (500/2)+30,210
@@ -100,7 +99,7 @@ scr.title('ping pong')
 scr.setup(550,550)
 scr.tracer(0)
 ball = turtle.Turtle('circle')
-ball.color('white')
+ball.color('red')
 ball.shapesize(0.7,0.7)
 ball.penup()
 ball.speed(0)
